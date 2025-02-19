@@ -4,8 +4,6 @@ from sqlalchemy.orm import Session
 import crud, models, schemas
 from database import SessionLocal, engine
 
-# Create tables on startup (for demo purposes—migrations will later handle schema changes)
-models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="CD Practice API")
 
